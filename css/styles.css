@@ -1,0 +1,115 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: limegreen;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: center; /* ajuda a centralizar a tabela e logo */
+  padding-top: 30px; /* espaço acima do logo */
+}
+
+/* Header e logo */
+header {
+  padding-bottom: 10px; /* Ajuste o espaço abaixo do logo se necessário */
+  text-align: center; /* Garante que o conteúdo dentro do header esteja centralizado */
+}
+
+.logo-container {
+  display: inline-block; /* Evita que a div ocupe toda a largura da tela */
+  margin: 0; /* Remove qualquer margem extra ao redor da logo */
+  padding: 0; /* Remove qualquer padding extra */
+}
+
+.logo-container img {
+  display: block; /* Garante que a imagem seja um bloco e ocupe apenas o necessário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: auto; /* Mantém a largura automática para se ajustar ao conteúdo */
+  height: auto; /* Ajusta a altura automaticamente */
+  max-width: 250px /* Limita a largura do logo (pode ajustar conforme necessário) */
+}
+
+/* Navbar */
+nav {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+nav a {
+  color: limegreen;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Parágrafo */
+p {
+  color: limegreen;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* Tabela do cardápio */
+.cardapio-tabela {
+  width: 70%; /* Deixa a tabela mais estreita */
+  max-width: 800px; /* Opcional: limita a largura máxima */
+  margin: 0 auto; /* Centraliza a tabela */
+  border-collapse: collapse;
+  border: 2px solid limegreen;
+}
+
+.cardapio-tabela th,
+.cardapio-tabela td {
+  border: 2px solid limegreen;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: limegreen;
+
+ol {
+    list-style-type: decimal !important;
+}
+
+
+
+ol {
+    /* 1. Garante que os números apareçam fora do fluxo normal, 
+       mas ainda permite aplicar estilos à eles */
+    list-style: none !important; 
+    
+    /* 2. Adiciona espaço à esquerda para que os números caibam */
+    padding-left: 20px; 
+}
+
+ol li {
+    /* 3. Prepara cada item como um ponto de referência */
+    position: relative;
+}
+
+ol li::before {
+    /* 4. O elemento que cria o número da lista */
+    content: counter(li) ". "; /* Gera o número (1., 2., 3., etc.) */
+    counter-increment: li; /* Incrementa o contador */
+    
+    /* 5. Estiliza e posiciona o número */
+    color: limegreen; /* AQUI VOCÊ DEFINE A COR DOS NÚMEROS */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+}
